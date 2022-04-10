@@ -1,0 +1,27 @@
+'''
+This file is used to Validate the data in S3 buckets 
+The output we are trying to get in the dictionary as the file path and the file count
+dict1={'file_path':'file_count'}
+dict{'file_path':'file_count'}
+import os 
+dict1={} # dictionary that has file path as keys and counts as values 
+lis1=os.popen('aws s3 l3 <bucket name>/').read() # list that has all directories in it
+list_files=[] 
+cnt_dir=count no of dir in path
+cnt_file=count no of file in path
+# If file is there then insert the file path and file count in dictionary and remove the file from the lis1
+li1.remove(flies) # remove files from list1
+#clear list_files after noting in a dictionary
+while cnt_dir>0:
+    for i in lis1:
+        temp_lis=('aws s3 ls <bucket name /+i').read()
+        items_rmv=[i]
+        cnt_dir_1=
+        cnt_file_=
+        # if there are files add them to dictionary 
+        temp_lis.remove(files)
+        
+        pos_insert=lis1.index(i)
+        for j in temp_lis:
+            pos_insert+=1
+            lis1.insert(pos_insert,i+'/'+j)
